@@ -35,8 +35,8 @@ public class MemberDAO {
 		}
 	}
 	
-	public List listMembers() {
-		List list = new ArrayList();
+	public List<MemberVO> listMembers() {
+		List<MemberVO> list = new ArrayList();
 		try {
 			//connDB();
 			con = dataFactory.getConnection();
