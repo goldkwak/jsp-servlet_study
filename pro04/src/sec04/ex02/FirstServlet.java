@@ -15,7 +15,7 @@ public class FirstServlet extends HttpServlet{
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html; charset=utf-8");
-		request.setAttribute("address", "경기도 성남시");
+		request.setAttribute("address", "서울특별시 강남구");
 		RequestDispatcher dispatch = request.getRequestDispatcher("second");
 		dispatch.forward(request, response);
 	}
